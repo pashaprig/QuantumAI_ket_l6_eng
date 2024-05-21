@@ -1,27 +1,27 @@
 /* Fonts */
 
-// Montserrat
+// Jura
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Jura";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"),
-    url("../fonts/montserrat/Montserrat-Regular400.woff2") format("woff2"),
-    url("../fonts/montserrat/Montserrat-Regular400.woff") format("woff"),
-    url("../fonts/montserrat/Montserrat-Regular400.ttf") format("truetype");
+  src: local("Jura Regular"),
+    url("../fonts/jura/Jura-Regular.woff2") format("woff2"),
+    url("../fonts/jura/Jura-Regular.woff") format("woff"),
+    url("../fonts/jura/Jura-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Jura";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-display: swap;
-  src: local("Montserrat Medium"),
-    url("../fonts/montserrat/Montserrat-Medium500.woff2") format("woff2"),
-    url("../fonts/montserrat/Montserrat-Medium500.woff") format("woff"),
-    url("../fonts/montserrat/Montserrat-Medium500.ttf") format("truetype");
+  src: local("Jura Bold"),
+    url("../fonts/jura/Jura-Bold.woff2") format("woff2"),
+    url("../fonts/jura/Jura-Bold.woff") format("woff"),
+    url("../fonts/jura/Jura-Bold.ttf") format("truetype");
 }
 
 // Inter
@@ -35,4 +35,17 @@
     url("../fonts/inter/Inter-Regular.woff2") format("woff2"),
     url("../fonts/inter/Inter-Regular.woff") format("woff"),
     url("../fonts/inter/Inter-Regular.ttf") format("truetype");
+}
+
+// Aftika
+
+@font-face {
+  font-family: "Aftika";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Aftika Bold"),
+    url("../fonts/aftika/aftika-bold.woff2") format("woff2"),
+    url("../fonts/aftika/aftika-bold.woff") format("woff"),
+    url("../fonts/aftika/aftika-bold.ttf") format("truetype");
 }
