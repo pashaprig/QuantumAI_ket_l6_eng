@@ -1,0 +1,16 @@
+.solution {
+  margin-bottom: 75px;
+}
+
+.solution__about {
+  padding-right: 600px;
+
+  span {
+    font-weight: 700;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
