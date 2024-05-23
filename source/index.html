@@ -407,43 +407,52 @@
       </ul>
     </section>
 
-    <section class="come-on container">
-      <h2 class="come-on__heading heading">Получай дивиденды от 150 000 ₸ в неделю</h2>
-      <p class="come-on__about">Стань одним из первых инвесторов, приобретающих акции самого крупного банка в
-        Казахстане.</p>
-      <form action="<?= $form; ?>" class="form form--bottom" method="POST" id="leadform2">
-        <input type="text" name="firstname" id="name2" placeholder="Имя">
-        <input type="text" name="lastname" id="lastName2" placeholder="Фамилия">
-        <input type="email" name="email" id="email2" placeholder="Эл. адрес">
-        <input type="tel" name="phone2" placeholder="" id="phone2">
-        <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="">
-        <input type="hidden" name="currency" value="eur">
-        <input id="country2" type="hidden" name="country" value="ru">
-        <input type="hidden" name="comment" class="comment" value="">
-        <input type="hidden" name="campaign_name" value="">
-        <input type="hidden" type="text" name="name" id="name2">
-        <button class="btn submit_btn" type="submit"><span>Записаться на курс</span></button>
-        <label class="form__checkbox-label"><input class="checkbox" type="checkbox" name="polycy" id=""
-            checked="checked"> <span>Я принимаю </span><a href="?page=conditions">пользовательское
-            соглашение</a></label> <label class="form__checkbox-label"><input class="checkbox" type="checkbox"
-            name="terms" id="" checked="checked"> <span>Я согласен с <a href="?page=terms">политикой
-              конфиденциальности</a></span></label>
-        <div class="form_message error inactive"
-          style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
-        </div>
-      </form>
+    <section class="promo promo--bottom container">
+      <div class="promo__wrapper promo__wrapper--text">
+        <h2 class="promo__heading heading">Smart Investing That Makes You <span>$</span>1500 in 5 Hours And Cures Poverty</h2>
+        <p class="promo__about">Our smart investing can make you thousands in less than 7 days, and will help cure poverty while you earn!</p>
+      </div>
+      <div class="promo__wrapper">
+        <form action="<?= $form; ?>" class="form form--bottom" method="POST" id="leadform2">
+          <input type="text" name="firstname" id="name2" placeholder="Имя">
+          <input type="text" name="lastname" id="lastName2" placeholder="Фамилия">
+          <input type="email" name="email" id="email2" placeholder="Эл. адрес">
+          <input type="tel" name="phone2" placeholder="" id="phone2">
+          <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="">
+          <input type="hidden" name="currency" value="eur">
+          <input id="country2" type="hidden" name="country" value="ru">
+          <input type="hidden" name="comment" class="comment" value="">
+          <input type="hidden" name="campaign_name" value="">
+          <input type="hidden" type="text" name="name" id="name2">
+          <button class="btn submit_btn" type="submit"><span>join now</span></button>
+          <label class="form__checkbox-label">
+            <input class="checkbox" type="checkbox" name="polycy" id="" checked="checked"> <span>I accept the </span><a
+              href="?page=conditions">user agreement</a>
+          </label>
+          <label class="form__checkbox-label">
+            <input class="checkbox" type="checkbox" name="terms" id="" checked="checked"> <span>I agree with the <a
+                href="?page=terms">privacy policy</a></span>
+          </label>
+          <div class="form_message error inactive"
+            style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
+          </div>
+        </form>
+      </div>
+
+
     </section>
   </main>
 
   <footer class="page-footer container">
-      <picture>
-        <source type="image/webp" srcset="img/img/logo.webp">
-        <img width="333" height="132" class="page-footer__img" src="img/img/logo.png" alt="Logo QuantumAI">
-      </picture>
-      <p class="page-footer__about">All rights and information are reserved. Any copying and distribution of information is an offense and will be prosecuted by law.</p>
-      <p class="page-footer__year">Сopyright – all rights reserved 2024</p>
-      <a href="?page=terms" class="page-footer__polycy">Privacy Policy</a>
-      <a href="?page=conditions" class="page-footer__polycy">User Agreement</a>
+    <picture>
+      <source type="image/webp" srcset="img/img/logo.webp">
+      <img width="333" height="132" class="page-footer__img" src="img/img/logo.png" alt="Logo QuantumAI">
+    </picture>
+    <p class="page-footer__about">All rights and information are reserved. Any copying and distribution of information
+      is an offense and will be prosecuted by law.</p>
+    <p class="page-footer__year">Сopyright – all rights reserved 2024</p>
+    <a href="?page=terms" class="page-footer__polycy">Privacy Policy</a>
+    <a href="?page=conditions" class="page-footer__polycy">User Agreement</a>
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>

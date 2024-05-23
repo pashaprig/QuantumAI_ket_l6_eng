@@ -18,8 +18,13 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 50px;
+
+    &#leadform2 {
+      margin-top: 0;
+    }
   }
 }
+
 
 input {
   box-sizing: border-box;

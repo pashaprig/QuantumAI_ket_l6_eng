@@ -5,7 +5,7 @@
   background: url("../img/bcg/review-bcg.webp") $basic-white 50% / cover no-repeat;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 0;
     padding: 70px 15px;
 
     .cards__item {

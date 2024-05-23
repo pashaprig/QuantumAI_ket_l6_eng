@@ -16,6 +16,22 @@
     z-index: -1;
   }
 
+  &--bottom {
+    padding-top: 150px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../img/bcg/promo-bcg.webp') center/cover no-repeat;
+      opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     overflow: hidden;
     flex-direction: column;
@@ -31,6 +47,23 @@
       background: url('../img/bcg/promo-bcg.webp') center/cover no-repeat;
       opacity: 0.3;
       z-index: -1;
+    }
+
+    &--bottom {
+      padding-top: 110px;
+      padding-bottom: 80px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background: url('../img/bcg/promo-bcg.webp') center/cover no-repeat;
+        opacity: 0.3;
+        z-index: -1;
+      }
     }
   }
 }
@@ -61,7 +94,7 @@
 
 .promo__about {
   margin-bottom: 33px;
-  padding-right: 170px;
+  padding-right: 215px;
 
   @media (max-width: $tablet-width) {
     padding-right: 0;
