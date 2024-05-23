@@ -7,16 +7,30 @@
   background:
     linear-gradient(0deg, rgba(0, 5, 43, 0.3) 0%, rgba(0, 5, 43, 0.3) 100%),
     url("../img/bcg/advisors-bcg.webp") lightgray 50% / cover no-repeat;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 }
 
 .advisors__heading {
   margin-bottom: 50px;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advisors__list {
   display: flex;
   gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .advisors__item {
@@ -29,16 +43,31 @@
   border-radius: 12px;
   border: 1px solid $basic-white;
   box-shadow: 0px 4px 28.8px 0px rgba(171, 171, 171, 0.25);
+
+  @media (max-width: $tablet-width) {
+    padding-right: 5px;
+    width: 100%;
+  }
 }
 
 .advisors__wrapper {
   display: flex;
   gap: 52px;
+
+  @media (max-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .advisors__img {
+  object-fit: cover;
   border-radius: 50%;
   border: 2px solid $basic-white;
+
+  @media (max-width: $tablet-width) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .advisors__name-wrapper {
@@ -50,6 +79,10 @@
   color: #FFF;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 48px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 36px;
+  }
 }
 
 .advisors__more {

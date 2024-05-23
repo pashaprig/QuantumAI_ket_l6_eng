@@ -51,6 +51,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 203px;
   height: 63px;
   padding: 10px;
   color: $bcg;
@@ -63,6 +64,7 @@ button {
   border: 1px solid $basic-white;
 
   &:hover {
+    opacity: 1;
     color: $basic-white;
     background-color: $bcg;
   }
@@ -73,12 +75,7 @@ button {
 
   &--reverse{
     color: $basic-white;
-    background-color: $bcg;
-
-    &:hover {
-      color: $bcg;
-      background-color: $basic-white;
-    }
+    background-color: transparent;
   }
 }
 

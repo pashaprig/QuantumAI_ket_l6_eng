@@ -1,0 +1,96 @@
+.quantum {
+  padding: 150px 90px;
+  padding-bottom: 105px;
+
+  .btn {
+    margin-top: -20px;
+    margin-left: 75px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 80px 15px;
+
+    .btn {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+.quantum__heading {
+  margin-bottom: 50px;
+  padding-left: 600px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.quantum__list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    gap: 50px;
+  }
+}
+
+.quantum__item {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  min-height: 232px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 1px solid $basic-white;
+
+  &:nth-child(odd) {
+    color: $bcg;
+    background: $basic-white;
+
+    &::after  {
+      content: '';
+      position: absolute;
+      right: -340px;
+      width: 300px;
+      height: 140px;
+      background: no-repeat url('../img/img/stepArrow.webp');
+    }
+  }
+
+  &:nth-child(even) {
+    align-self: flex-end;
+
+    &::before  {
+      content: '';
+      position: absolute;
+      left: -340px;
+      width: 300px;
+      height: 140px;
+      transform: scaleX(-1);
+      background: no-repeat url('../img/img/stepArrow.webp');
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:nth-child(odd) {
+      &::after  {
+        all: unset;
+      }
+    }
+    &:nth-child(even) {
+      &::before  {
+        all: unset;
+      }
+    }
+  }
+}
+
+.quantum__about{
+  span {
+    font-weight: 700;
+  }
+}
