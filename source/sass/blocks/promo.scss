@@ -17,6 +17,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    overflow: hidden;
     flex-direction: column;
     gap: 0;
 

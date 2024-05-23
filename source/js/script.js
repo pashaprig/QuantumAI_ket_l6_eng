@@ -6,14 +6,16 @@ class App {
     this.showHideLicense();
     this.scroll();
     this.initSlider();
-    this.afterVideoPlay();
     this.onButtonPlay();
   }
 
   constructor() {
     this.iframe = document.querySelector('iframe');
     this.player = new Vimeo.Player(this.iframe);
-    this.btnPlay = document.querySelector('#button-play')
+    this.btnPlay = document.querySelector('#button-play');
+    this.screen = document.querySelector('.video__img');
+    this.videoWrapper = document.querySelector('.video__wrapper');
+    this.video = document.querySelector('.video ');
   }
 
 
@@ -93,15 +95,15 @@ class App {
     if (deviceWidth > 768) {
       // desktop
       scrollToFirst = 4700
-      scrollToSecond =4850
-      scrollToThird =5000
-      scrollToLast =5200
+      scrollToSecond = 4850
+      scrollToThird = 5000
+      scrollToLast = 5200
     } else {
       // mobile
       scrollToFirst = 5200
-      scrollToSecond =5400
-      scrollToThird =5700
-      scrollToLast =5900
+      scrollToSecond = 5400
+      scrollToThird = 5700
+      scrollToLast = 5900
     }
 
     const circles = document.querySelectorAll('.start__about')
@@ -153,21 +155,16 @@ class App {
     })
   }
 
-  afterVideoPlay() {
-    const vidoWrapper = document.querySelector('.promo__video')
-
-    const onPlay = () => {
-      vidoWrapper.style.borderRadius = 'unset';
-      this.btnPlay.style.display = 'none'
-    };
-
-    this.player.on('play', onPlay);
-  }
 
   onButtonPlay() {
     const playVideo = () => {
       this.player.play()
       this.btnPlay.style.display = 'none'
+      this.screen.style.display = 'none'
+      this.videoWrapper.style.minWidth = '100%'
+      this.videoWrapper.style.height = 'auto'
+      this.video.style.flexDirection = 'column'
+
     }
 
     this.btnPlay.addEventListener('click', playVideo);
