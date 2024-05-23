@@ -31,17 +31,19 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-right: 5px;
+    padding-right: 15px;
     width: 100%;
   }
 }
 
 .cards__wrapper {
   display: flex;
-  gap: 52px;
+  gap: 40px;
+  min-height: 163px;
 
   @media (max-width: $tablet-width) {
     gap: 20px;
+    min-height: unset;
   }
 }
 
