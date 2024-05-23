@@ -1,0 +1,31 @@
+.partners {
+  padding: 150px 100px;
+  padding-top: 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 80px 15px;
+    padding-top: 0;
+  }
+}
+
+.partners__heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.partners__list{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+
+.partners__item {
+  min-width: fit-content;
+  width: 30%;
+}
