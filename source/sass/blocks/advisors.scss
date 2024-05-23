@@ -1,0 +1,62 @@
+.advisors {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background:
+    linear-gradient(0deg, rgba(0, 5, 43, 0.3) 0%, rgba(0, 5, 43, 0.3) 100%),
+    url("../img/bcg/advisors-bcg.webp") lightgray 50% / cover no-repeat;
+}
+
+.advisors__heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.advisors__list {
+  display: flex;
+  gap: 30px;
+}
+
+.advisors__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 12px 24px;
+  padding-right: 40px;
+  border-radius: 12px;
+  border: 1px solid $basic-white;
+  box-shadow: 0px 4px 28.8px 0px rgba(171, 171, 171, 0.25);
+}
+
+.advisors__wrapper {
+  display: flex;
+  gap: 52px;
+}
+
+.advisors__img {
+  border-radius: 50%;
+  border: 2px solid $basic-white;
+}
+
+.advisors__name-wrapper {
+  margin-bottom: 43px;
+}
+
+.advisors__name {
+  margin-bottom: 14px;
+  color: #FFF;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 48px;
+}
+
+.advisors__more {
+  opacity: 0.5;
+}
+
+.advisors__line {
+  max-width: 100%;
+  margin-bottom: 13px;
+}

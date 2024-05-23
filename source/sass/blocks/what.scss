@@ -1,6 +1,7 @@
 .what {
   display: flex;
   gap: 106px;
+  margin-bottom: 140px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
